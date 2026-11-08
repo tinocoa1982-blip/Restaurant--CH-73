@@ -1,0 +1,40 @@
+:root {
+    --border-color: black;
+    --confirmed-color: lightgreen;
+    --pending-color: lightyellow;
+    --cancelled-color: rgb(241, 182, 182);
+}
+
+body {
+    font-family: Arial;
+    background-color: beige;
+}
+
+table, th, td {
+    border: 1px solid var(--border-color);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: lightgray;
+}
+
+.confirmed {
+    background-color: var(--confirmed-color);
+    color: darkgreen;
+}
+
+.pending {
+    background-color: var(--pending-color);
+    color: darkorange;
+}
+
+.cancelled {
+    background-color: var(--cancelled-color);
+    color: rgb(99, 6, 6);
+}
